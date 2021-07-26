@@ -65,6 +65,11 @@ $helvetica: "Helvetica";
                 width: 100%;
                 // margin-top: 10px;
                 transition: all 0.7s;
+
+                // selector 
+                #an_svg path {
+                    transform-origin: center;
+                }
                 // query
                 @include resp(992px) {
                     width: 55%;

@@ -64,6 +64,9 @@
   width: 100%;
   transition: all 0.7s;
 }
+#form .container .wrapper #animation #an_svg path {
+  transform-origin: center;
+}
 @media only screen and (min-width: 992px) {
   #form .container .wrapper #animation {
     width: 55%;
