@@ -4,10 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: "Helvetica";
-  src: url("/Helvetica.c340306c.ttf");
+  src: url("Helvetica.2e6b8247.ttf");
 }
 #form {
   width: 100%;
@@ -246,5 +245,4 @@
     width: 48%;
   }
 }
-
-/*# sourceMappingURL=/script.d573be0b.css.map */
+/*# sourceMappingURL=index.4b3e9e2c.css.map */

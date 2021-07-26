@@ -1,20 +1,28 @@
 {
-  "name": "form",
+  "name": "animation-form2-envato-",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "parcel ./app/index.html",
-    "build": "parcel build ./app/js/script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rejoan121615/animation-form2-envato-.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "bugs": {
+    "url": "https://github.com/rejoan121615/animation-form2-envato-/issues"
+  },
+  "homepage": "https://github.com/rejoan121615/animation-form2-envato-#readme",
+  "dependencies": {
+    "gsap": "^3.7.1",
     "sass": "^1.36.0"
   },
-  "dependencies": {
-    "gsap": "^3.7.1"
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2"
   }
 }
