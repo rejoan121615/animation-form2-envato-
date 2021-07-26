@@ -38,14 +38,16 @@ $helvetica: "Helvetica";
             max-width: 550px;
         }
         @include resp(992px) {
-            width: 80%;
+            width: 85%;
             padding: 25px;
+            max-width: 875px;
         }
         @include resp(992px) {
             max-width: 850px;
+            width: 90%;
         }
         @include resp(1200px) {
-            max-width: 900px;
+            max-width: 1100px;
             padding: 30px;
         }
         .wrapper {
@@ -84,11 +86,13 @@ $helvetica: "Helvetica";
                 padding-right: 25px;
                 // query
                 @include resp(992px) {
-                    width: 40%;
+                    width: 45%;
                     margin-top: 0px;
-                    padding: 0px;
+                    padding: 20px 10px 10px 10px;
                 }
-
+                @include resp (1200px) {
+                    padding: 18px 15px 10px 15px;
+                }
                 // logo
                 .logo {
                     width: 100px;
@@ -109,12 +113,12 @@ $helvetica: "Helvetica";
                         @include resp(992px) {
                             margin-top: 20px;
                             margin-bottom: 20px;
-                        }
-                        @include resp(992px) {
-                            font-size: 2rem;
+                            font-size: 2.5rem;
                         }
                         @include resp(1200px) {
-                            font-size: 3.3rem;
+                            font-size: 3rem;
+                            margin-top: 32px;
+                            margin-bottom: 32px;
                         }
                     }
 
@@ -122,12 +126,21 @@ $helvetica: "Helvetica";
                         display: flex;
                         flex-direction: column;
                         margin-bottom: 35px;
+                        @include resp (992px) {
+                            margin-bottom: 20px;
+                        }
+                        @include resp (1200px) {
+                            margin-bottom: 30px;
+                        }
                         label {
                             font-family: $helvetica;
                             font-size: 1.4rem;
                             width: 100%;
                             @include resp (992px) {
-                                font-size: 1.2rem;
+                                font-size: 1.05rem;
+                            }
+                            @include resp (1200px) {
+                                font-size: 1.3rem;
                             }
                         }
                         input {
@@ -147,6 +160,12 @@ $helvetica: "Helvetica";
                             // query 
                             @include resp (992px) {
                                 margin-top: 6px;
+                                font-size: 1.05rem;
+                                padding: 5px 0px 8px 5px;
+                            }
+                            @include resp (1200px) {
+                                padding: 12px;
+                                font-size: 1.15rem;
                             }
                         }
                     }
@@ -166,6 +185,17 @@ $helvetica: "Helvetica";
                         font-weight: bold;
                         cursor: pointer;
                         margin-top: 30px;
+                        @include resp (992px) {
+                            font-size: 1.25rem;
+                            padding: 12px;
+                            letter-spacing: 1.5px;
+                        }
+                        @include resp (1200px) {
+                            font-size: 1.6rem;
+                            padding: 18px;
+                            letter-spacing: 2px;
+                            margin-top: 35px;
+                        }
                     }
 
                     .bottom__para {
@@ -179,6 +209,13 @@ $helvetica: "Helvetica";
                             display: inline-block;
                             color: black;
                             font-weight: bold;
+                        }
+                        @include resp (992px) {
+                            margin-top: 15px;
+                        }
+                        @include resp (1200px) {
+                            margin-top: 20px;
+                            font-size: 15px;
                         }
                     }
                 }
