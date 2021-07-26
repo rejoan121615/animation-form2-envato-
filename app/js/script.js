@@ -16,6 +16,19 @@ getLink.forEach((item, index) => {
 // })
 
 
+// sign in 
+const signIn = document.querySelector('#sign_in_btn');
+
+
+signIn.addEventListener('click', () => {
+    
+})
+
+
+// sign up 
+const signUp = document.querySelector('#sign_up_btn');
+
+
 
 
 

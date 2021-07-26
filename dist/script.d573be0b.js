@@ -204,6 +204,12 @@ getLink.forEach(function (item, index) {
 //         link.preventDefault()
 //     })
 // })
+// sign in 
+
+var signIn = document.querySelector('#sign_in_btn');
+signIn.addEventListener('click', function () {}); // sign up 
+
+var signUp = document.querySelector('#sign_up_btn');
 },{"../scss/style.scss":"scss/style.scss"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
