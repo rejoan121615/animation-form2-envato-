@@ -234,5 +234,14 @@
     font-size: 15px;
   }
 }
+@media only screen and (min-width: 768px) {
+  #form .container .name__pass_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #form .container .name__pass_container .input__group {
+    width: 48%;
+  }
+}
 
 /*# sourceMappingURL=/script.d573be0b.css.map */

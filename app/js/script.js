@@ -9,8 +9,17 @@ getLink.forEach((item, index) => {
         link.preventDefault()
     })
 })
-document.querySelectorAll('a').forEach((item, index) => {
-    item.addEventListener('click', (link) => {
-        link.preventDefault()
-    })
-})
+// document.querySelectorAll('a').forEach((item, index) => {
+//     item.addEventListener('click', (link) => {
+//         link.preventDefault()
+//     })
+// })
+
+
+
+
+
+
+
+
+

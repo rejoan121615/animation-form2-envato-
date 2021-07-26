@@ -199,12 +199,11 @@ getLink.forEach(function (item, index) {
   item.addEventListener('click', function (link) {
     link.preventDefault();
   });
-});
-document.querySelectorAll('a').forEach(function (item, index) {
-  item.addEventListener('click', function (link) {
-    link.preventDefault();
-  });
-});
+}); // document.querySelectorAll('a').forEach((item, index) => {
+//     item.addEventListener('click', (link) => {
+//         link.preventDefault()
+//     })
+// })
 },{"../scss/style.scss":"scss/style.scss"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
