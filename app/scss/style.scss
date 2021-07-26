@@ -107,6 +107,13 @@ $helvetica: "Helvetica";
                 }
                 // form container
                 #form__container {
+                    // height: 500px;
+                    // overflow: hidden;
+                    // // query 
+                    // @include resp (992px) {
+                    //     height: 485px;
+                    // }
+                    // form title 
                     .form__title {
                         font-family: $roboto;
                         font-size: 2.2rem;
@@ -181,7 +188,7 @@ $helvetica: "Helvetica";
                         border: 0px solid transparent;
                         color: white;
                         text-align: center;
-                        font-size: 1.8rem;
+                        font-size: 1.3rem;
                         background-color: black;
                         padding: 18px 35px;
                         text-transform: capitalize;
@@ -236,4 +243,19 @@ $helvetica: "Helvetica";
             }
         }
     }
+}
+
+
+// animation scss 
+#sign__in, #sign__up {
+    position: relative;
+}
+#sign__in {
+    z-index: 500;
+    opacity: 1;
+}
+#sign__up {
+    z-index: 0;
+    opacity: 0;
+    display: none;
 }

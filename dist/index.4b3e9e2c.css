@@ -187,7 +187,7 @@
   border: 0px solid transparent;
   color: white;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   background-color: black;
   padding: 18px 35px;
   text-transform: capitalize;
@@ -244,5 +244,17 @@
   #form .container .name__pass_container .input__group {
     width: 48%;
   }
+}
+#sign__in, #sign__up {
+  position: relative;
+}
+#sign__in {
+  z-index: 500;
+  opacity: 1;
+}
+#sign__up {
+  z-index: 0;
+  opacity: 0;
+  display: none;
 }
 /*# sourceMappingURL=index.4b3e9e2c.css.map */
