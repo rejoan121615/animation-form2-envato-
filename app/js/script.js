@@ -3,11 +3,6 @@ import "../scss/style.scss";
 import { gsap } from "gsap";
 
 // disable click behave
-document.querySelectorAll("button").forEach((item, index) => {
-    item.addEventListener("click", (link) => {
-        link.preventDefault();
-    });
-});
 document.querySelectorAll("a").forEach((item, index) => {
     item.addEventListener("click", (link) => {
         link.preventDefault();

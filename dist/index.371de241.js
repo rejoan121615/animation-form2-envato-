@@ -431,11 +431,6 @@ function hmrAcceptRun(bundle, id) {
 require("../scss/style.scss");
 var _gsap = require("gsap");
 // disable click behave
-document.querySelectorAll("button").forEach((item, index) => {
-  item.addEventListener("click", link => {
-    link.preventDefault();
-  });
-});
 document.querySelectorAll("a").forEach((item, index) => {
   item.addEventListener("click", link => {
     link.preventDefault();
