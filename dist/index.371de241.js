@@ -431,18 +431,15 @@ function hmrAcceptRun(bundle, id) {
 require("../scss/style.scss");
 var _gsap = require("gsap");
 // disable click behave
-document.querySelectorAll("button").forEach((item, index) => {
-  item.addEventListener("click", link => {
-    link.preventDefault();
-  });
-});
 document.querySelectorAll("a").forEach((item, index) => {
   item.addEventListener("click", link => {
     link.preventDefault();
   });
 });
 // animation setting
-const timeline = _gsap.gsap.timeline();
+const timeline = _gsap.gsap.timeline({
+  paused: true
+});
 _gsap.gsap.defaults({
   duration: 1.2,
   transformOrigin: "center"
@@ -513,6 +510,8 @@ registerBtn.addEventListener("click", () => {
     x: -200,
     y: 190
   }, "<");
+  // timeline
+  timeline.play();
 });
 // sign in animation
 logIn.addEventListener("click", () => {

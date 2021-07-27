@@ -3,11 +3,6 @@ import "../scss/style.scss";
 import { gsap } from "gsap";
 
 // disable click behave
-document.querySelectorAll("button").forEach((item, index) => {
-    item.addEventListener("click", (link) => {
-        link.preventDefault();
-    });
-});
 document.querySelectorAll("a").forEach((item, index) => {
     item.addEventListener("click", (link) => {
         link.preventDefault();
@@ -15,8 +10,7 @@ document.querySelectorAll("a").forEach((item, index) => {
 });
 
 // animation setting
-
-const timeline = gsap.timeline();
+const timeline = gsap.timeline({paused: true});
 gsap.defaults({
     duration: 1.2,
     transformOrigin: "center",
@@ -137,7 +131,10 @@ registerBtn.addEventListener("click", () => {
                 y: 190,
             },
             "<"
-        );
+    );
+    
+    // timeline 
+    timeline.play()
 });
 
 // sign in animation
